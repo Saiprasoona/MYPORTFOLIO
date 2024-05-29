@@ -1,0 +1,114 @@
+.collapse {
+    justify-content: right;
+}
+
+@media (max-width: 320px) {
+    body {
+        min-width: 320px;
+        overflow-x: auto;
+        /* Add horizontal scrollbar if content overflows */
+    }
+}
+
+.container {
+    margin: 0;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.row {
+    width: 60%;
+}
+
+.display-5 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 5rem;
+    text-align: justify;
+}
+
+.name,
+.tagline {
+    font-family: "Geneva, Tahoma, Verdana, sans-serif";
+    margin: 0 auto;
+}
+
+.name {
+    text-align: justify;
+}
+
+.tagline {
+    text-align: right;
+}
+
+.movingBG {
+    background-image: url(./assets/mypic.jpeg);
+    width: auto;
+    height: 100vh;
+    background-repeat: repeat-x;
+    animation: animatedBackground 5s linear alternate infinite;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.cols {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    border-radius: 30%;
+    background-color: #f2f2f2;
+    /* Light gray background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a rounded shadow */
+    padding: 20px;
+    text-align: center;
+}
+
+.cols .col {
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    flex-direction: column;
+    /* Align items in column */
+}
+
+.cols img {
+    align-items: center;
+    width: 200px;
+    /* Set a fixed width for all images */
+    height: 200px;
+    /* Set a fixed height for all images */
+    object-fit: cover;
+    /* Maintain aspect ratio and crop if necessary */
+    border-radius: 50%;
+    /* Maintain aspect ratio */
+}
+
+.carousel-item img,
+#carouselExampleIndicators {
+    height: 70vh;
+    /* Set carousel image height to 80% of viewport height */
+}
+
+.carousel-caption {
+    position: static;
+
+}
+
+.carousel-caption>p,
+.carousel-caption>h3 {
+    color: black;
+}
